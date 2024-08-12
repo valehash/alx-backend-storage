@@ -1,0 +1,2 @@
+// Counting the nummber of documents
+db.school.estimatedDocumentCount()
