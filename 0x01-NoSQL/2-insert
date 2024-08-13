@@ -1,3 +1,2 @@
-// Inserting the scool collection into thw db
-
-db.school.insertOne({ name: "Holberton School"})
+// Inserting the scool collection into thw db  db.school.insertOne({ name: "Holberton School"}) -- current , the below code is depreciated
+db.school.insert({ name: "Holberton School"})
