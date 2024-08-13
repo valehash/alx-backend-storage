@@ -1,2 +1,2 @@
 // find the item that matches the name
-db.school.find({ name: "Holberton School" })
+db.school.find({ name: "Holberton School" }).pretty()
