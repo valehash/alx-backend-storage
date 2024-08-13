@@ -1,2 +1,5 @@
 //update the document  where name is holberton  the below is outdated.
-db.school.findAndModify({"name" : "Holberton school"}, {$set: {"address": "972 Mission street"}})
+db.school.findAndModify(
+	query:  {name : "Holberton school"}, 
+	update: {$set: {"address": "972 Mission street"}},
+	new: true);
