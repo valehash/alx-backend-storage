@@ -11,5 +11,4 @@ def insert_school(mongo_collection, name, topics):
 
     if mongo_collection is None:
         return []
-
-    return mongo_collection.update_many({"name": name}, {"$set": {"topics": topics}})
+    mongo_collection.update_many({"name": name}, {"$set": {"topics": topics}})
