@@ -1,17 +1,15 @@
-#!/usr/bin/python3
-"""Script that list all documents in a collection"""
-from typing import List 
-from pymongo.collection import Collection
+#!/usr/bin/env python3
 
-def list_all(mongo_collection: Collection) -> List[dict]:
-    """
-    Args:
-        mongocollection: The mongocollection object
-    Returns:
-        Returns a list of all documents in the collection
-    """
+"""
+This module contains a single funct that lists all documents in NoSQL
+collection
+"""
+
+
+def list_all(mongo_collection):
+    """Lists all the documents in a collection."""
+
     if mongo_collection is None:
         return []
 
-    return list(mongo_collection.find({}))
-
+    return mongo_collection.find({})
