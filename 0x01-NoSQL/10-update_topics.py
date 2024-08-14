@@ -6,7 +6,7 @@ collection
 """
 
 
-def insert_school(mongo_collection, name, topics):
+def update_topics(mongo_collection, name, topics):
     """updates all topics in the schoool based on the name"""
 
     if mongo_collection is None:
